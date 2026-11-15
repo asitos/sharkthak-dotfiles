@@ -161,3 +161,11 @@ assign("special:downloads silent", {
     { "qbittorrent",  { class = "^org.qbittorrent.qBittorrent$" } },
     { "jdownloader2", { title = "^(JDownloader 2)$" } },
 })
+
+hl.layer_rule({
+    name = "notif popup",
+    match = {
+        namespace = "wayle-notification-popup",
+    },
+    no_screen_share = true,
+})

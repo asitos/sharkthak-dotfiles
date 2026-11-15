@@ -58,7 +58,6 @@ button-bg-color = "bg-base"
 border-color = "accent"
 icon-color = "fg-default"
 icon-bg-color = "bg-base"
-label-show = false
 label-color = "fg-default"
 button-bg-color = "bg-base"
 
@@ -101,7 +100,6 @@ scroll-down = "wpctl set-volume @DEFAULT_AUDIO_SOURCE@ 0.05-"
 [modules.network]
 icon-color = "fg-default"
 icon-bg-color = "bg-base"
-label-show = false
 label-color = "fg-default"
 button-bg-color = "bg-base"
 

@@ -1,4 +1,9 @@
-hl.env("AQ_DRM_DEVICES", "/dev/dri/intel-igpu:/dev/dri/nvidia-dgpu") -- symlinked using a udev rule
+local docked = require("docked")
+if docked.docked() then
+  hl.env("AQ_DRM_DEVICES", "/dev/dri/nvidia-dgpu:/dev/dri/intel-igpu")
+else
+  hl.env("AQ_DRM_DEVICES", "/dev/dri/intel-igpu:/dev/dri/nvidia-dgpu")
+end
 
 -- cursor
 hl.env("XCURSOR_SIZE", "24")
